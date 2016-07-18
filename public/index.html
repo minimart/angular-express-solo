@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="studentapp">
+  <head>
+    <meta charset="utf-8">
+    <script src="/angular.min.js" charset="utf-8"></script>
+    <script src="/client.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Poiret+One" rel="stylesheet" />
+    <link href="/stylesheet.css" rel="stylesheet" />
+    <title>Student List</title>
+  </head>
+  <body ng-controller="generateList">
+    <h2>Check out the students in the Xi Cohort!</h2>
+    <button ng-click="generateApp()">Generate List of Students</button>
+    <div>
+      <ul>
+      <li ng-repeat="student in students">
+        {{student}}
+        <br>
+      </li>
+      </ul>
+    </div>
+  </body>
+</html>

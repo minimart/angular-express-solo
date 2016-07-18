@@ -1,0 +1,29 @@
+html {
+  font-family: 'Poiret One', cursive;
+  display: table;
+  margin: auto;
+  height: 100%;
+  background-color: plum;
+}
+button {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.5em;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: mediumorchid;
+}
+button:active {
+  background-color: mediumpurple;
+};
+body {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+li {
+    margin: 0 0 3px 0;
+    font-size: 1.5em;
+}
+h2 {
+  font-family: 'Poiret One', cursive;
+}
