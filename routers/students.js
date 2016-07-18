@@ -1,4 +1,5 @@
 var router = require('express').Router();
+//Here is the list of students to send
 var students = [
   "Andrew Kolander",
   "Anthony Maki",
@@ -21,9 +22,12 @@ var students = [
   "Trent Johnson"
 ];
 
+
+// Here I am sending the list as a response whenever the /students URL is requested
 router.get('/', function(request, response){
   response.send(students);
   console.log('Here is what I am sending: ', students);
 });
 
+// NEVER FORGET TO EXPORT.
 module.exports = router;

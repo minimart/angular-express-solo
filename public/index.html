@@ -1,18 +1,25 @@
 <!DOCTYPE html>
+<!-- HERE I AM DECLARING THE NG APP I WILL BE USING IN MY ANGULAR  -->
 <html ng-app="studentapp">
   <head>
     <meta charset="utf-8">
+
+    <!--  DO NOT EVER FORGET TO SOURCE YOUR FILES!  -->
     <script src="/angular.min.js" charset="utf-8"></script>
     <script src="/client.js" charset="utf-8"></script>
+    <!-- HERE I AM PULLING IN SOME GOOGLE FONTS FOR STYLING PURPOSES -->
     <link href="https://fonts.googleapis.com/css?family=Arimo|Poiret+One" rel="stylesheet" />
     <link href="/stylesheet.css" rel="stylesheet" />
     <title>Student List</title>
   </head>
+  <!-- HERE IS WHERE THE MAGIC HAPPENS! THE CONTROLLER CORRESPONDS TO  -->
+  <!-- THE CLIENT.JS WHERE I MAKE ALL THE FUNCTIONS FOR THE FOLLOWING -->
   <body ng-controller="generateList">
     <h2>Check out the students in the Xi Cohort!</h2>
     <button ng-click="generateApp()">Generate List of Students</button>
     <div>
       <ul>
+        <!-- I AM REPEATING OVER THE ARRAY OF STUDENTS REC'D BY MY $HTTP CALL -->
       <li ng-repeat="student in students">
         {{student}}
         <br>
